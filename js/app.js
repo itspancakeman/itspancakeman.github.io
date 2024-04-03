@@ -28,7 +28,7 @@ navBar.setAttribute('class', 'navbar');
 header.appendChild(logo);
 header.appendChild(boxMenu);
 header.appendChild(navBar);
-//create navbarlinks
+//create navbarlinks, set text and links
 const home = document.createElement('a');
 home.setAttribute('href', '#home');
 home.setAttribute('class', 'active');
@@ -45,8 +45,78 @@ portfolio.textContent = 'Portfolio';
 const contact = document.createElement('a');
 contact.setAttribute('href', '#contact');
 contact.textContent = 'Contact';
+//append to navBar
 navBar.appendChild(home);
 navBar.appendChild(about);
 navBar.appendChild(services);
 navBar.appendChild(portfolio);
 navBar.appendChild(contact);
+//create section, set class and id
+const section = document.createElement('section');
+section.setAttribute('class', 'home');
+section.setAttribute('id', 'home');
+body.appendChild(section);
+//create homeContent div
+const homeContent = document.createElement('div');
+homeContent.setAttribute('class', 'home-content');
+section.appendChild(homeContent);
+//creating fillings for homeContent
+const greeting = document.createElement('h3');
+greeting.textContent = "Hello, it's me";
+homeContent.appendChild(greeting);
+const namePlate = document.createElement('h1');
+namePlate.textContent = 'Collin S';
+homeContent.appendChild(namePlate);
+const jobTitle = document.createElement('h3');
+jobTitle.textContent = "And I'm a ";
+homeContent.appendChild(jobTitle);
+//creating span for job title
+const jobTitle2 = document.createElement('span');
+jobTitle2.textContent = 'Frontend Engineer';
+jobTitle.appendChild(jobTitle2);
+const pContent = document.createElement('p');
+pContent.textContent = 'super interesting paragraph content found here';
+homeContent.appendChild(pContent);
+const socialMedia = document.createElement('div');
+//creating social media div
+socialMedia.setAttribute('class', 'social-media');
+homeContent.appendChild(socialMedia);
+//fillings for social media
+const facebook = document.createElement('a');
+facebook.setAttribute('href', '#');
+homeContent.appendChild(facebook);
+const facebook2 = document.createElement('i');
+facebook2.setAttribute('class', 'bx bxl-facebook');
+facebook.appendChild(facebook2);
+const twitter = document.createElement('a');
+twitter.setAttribute('href', '#');
+homeContent.appendChild(twitter);
+const twitter2 = document.createElement('i');
+twitter2.setAttribute('class', 'bx bxl-twitter');
+facebook.appendChild(twitter2);
+const instagram = document.createElement('a');
+instagram.setAttribute('href', '#');
+homeContent.appendChild(instagram);
+const instagram2 = document.createElement('i');
+instagram2.setAttribute('class', 'bx bxl-instagram');
+instagram.appendChild(instagram2);
+const linkedIn = document.createElement('a');
+linkedIn.setAttribute('href', '#');
+homeContent.appendChild(linkedIn);
+const linkedIn2 = document.createElement('i');
+linkedIn2.setAttribute('class', 'bx bxl-linkedin');
+linkedIn.appendChild(linkedIn2);
+//creating cv download button
+const cvDownload = document.createElement('a');
+cvDownload.setAttribute('href', '#');
+cvDownload.setAttribute('class', 'btn');
+cvDownload.textContent = 'Download CV';
+homeContent.appendChild(cvDownload);
+//creating home image
+const homePic = document.createElement('div');
+homePic.setAttribute('class', 'home-img');
+homeContent.appendChild(homePic);
+const homePic2 = document.createElement('img');
+homePic2.setAttribute('src', './images/personal-portfolio-pic.png');
+homePic2.setAttribute('alt', "");
+homePic.appendChild(homePic2);
