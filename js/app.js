@@ -2,6 +2,9 @@
 /*==================== scroll sections active link ====================*/
 
 /*==================== sticky navbar ====================*/
+let header1 = document.querySelector('header');
+header1.classList.toggle('sticky', window.scrollY > 100)
+
 /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
 
 /*==================== scroll reveal ====================*/
@@ -82,12 +85,15 @@ const socialMedia = document.createElement('div');
 socialMedia.setAttribute('class', 'social-media');
 homeContent.appendChild(socialMedia);
 //fillings for social media
+
+//facebook
 const facebook = document.createElement('a');
 facebook.setAttribute('href', '#');
 homeContent.appendChild(facebook);
 const facebook2 = document.createElement('i');
 facebook2.setAttribute('class', 'bx bxl-facebook');
 facebook.appendChild(facebook2);
+//twitter
 const twitter = document.createElement('a');
 twitter.setAttribute('href', '#');
 homeContent.appendChild(twitter);
@@ -120,3 +126,6 @@ const homePic2 = document.createElement('img');
 homePic2.setAttribute('src', './images/personal-portfolio-pic.png');
 homePic2.setAttribute('alt', "");
 homePic.appendChild(homePic2);
+
+
+
