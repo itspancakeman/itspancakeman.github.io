@@ -1,4 +1,11 @@
 /*==================== toggle icon navbar ====================*/
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
 /*==================== scroll sections active link ====================*/
 
 /*==================== sticky navbar ====================*/
@@ -6,6 +13,8 @@ let header1 = document.querySelector('header');
 header1.classList.toggle('sticky', window.scrollY > 100)
 
 /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
+menuIcon.classList.remove('bx-x');
+navbar.classList.remove('active');
 
 /*==================== scroll reveal ====================*/
 /*==================== typed js ====================*/
@@ -100,12 +109,14 @@ homeContent.appendChild(twitter);
 const twitter2 = document.createElement('i');
 twitter2.setAttribute('class', 'bx bxl-twitter');
 facebook.appendChild(twitter2);
+//instagram
 const instagram = document.createElement('a');
 instagram.setAttribute('href', '#');
 homeContent.appendChild(instagram);
 const instagram2 = document.createElement('i');
 instagram2.setAttribute('class', 'bx bxl-instagram');
 instagram.appendChild(instagram2);
+//linkedin
 const linkedIn = document.createElement('a');
 linkedIn.setAttribute('href', '#');
 homeContent.appendChild(linkedIn);
