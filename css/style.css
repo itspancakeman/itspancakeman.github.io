@@ -83,6 +83,21 @@ body {
 .home-img img {
     width: 30vw;
     margin-left: 10px;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-2.5rem);
+    }
+    
+    0% {
+        transform: translateY(0);
+    }
 }
 
 .home-content span {
@@ -157,6 +172,21 @@ margin-bottom: 2rem;
 
 .about-img img {
     width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-2.5rem);
+    }
+    
+    0% {
+        transform: translateY(0);
+    }
 }
 
 .heading {
@@ -450,7 +480,8 @@ margin-bottom: 2rem;
 
     .home-img img {
         width: 70vw;
-        margin-top: 4rem;
+        margin-bottom: 10px;
+        
     }
 
     .about {
