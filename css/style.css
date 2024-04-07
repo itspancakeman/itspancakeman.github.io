@@ -76,13 +76,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
     margin-top: 10%;
 }
 
 .home-img img {
     width: 30vw;
-    margin-left: 10px;
+    margin-right: 20px;
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -98,6 +97,12 @@ body {
     0% {
         transform: translateY(0);
     }
+}
+
+.home-content {
+    height: 100%;
+    width: 100%;
+    margin: auto;
 }
 
 .home-content span {
@@ -133,6 +138,7 @@ margin-bottom: 2rem;
     height: 4rem;
     background: transparent;
     border: .2rem solid var(--main-color);
+    border-radius: 100%;
     font-size: 2rem;
     color: var(--second-bg-color);
     margin: 3rem 1.5rem 3rem 0;
@@ -148,6 +154,7 @@ margin-bottom: 2rem;
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
+    margin-bottom: 15px;
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 1rem var(--main-color);
@@ -173,6 +180,7 @@ margin-bottom: 2rem;
 .about-img img {
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
+    margin-top: 30px;
 }
 
 @keyframes floatImage {
@@ -222,6 +230,7 @@ margin-bottom: 2rem;
     flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 5rem;
+    padding-bottom: 16rem;
 }
 
 .services-container .services-box {
@@ -267,6 +276,7 @@ margin-bottom: 2rem;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
+    padding-bottom: 20px;
 }
 
 .portfolio-container .portfolio-box {
@@ -280,6 +290,10 @@ margin-bottom: 2rem;
 .portfolio-box img {
     width: 100%;
     transition: .5s ease;
+}
+
+#pic2 {
+    height: 21vw;
 }
 
 .portfolio-box img:hover {
@@ -361,7 +375,7 @@ margin-bottom: 2rem;
 }
 
 .contact form .input-box input {
-    width: 50%;
+    width: 49%;
 }
 
 .contact form textarea {
@@ -410,6 +424,10 @@ margin-bottom: 2rem;
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
+    }
+
+    .about-img img {
+        padding-top: 50px;
     }
 }
 
@@ -481,6 +499,7 @@ margin-bottom: 2rem;
     .home-img img {
         width: 70vw;
         margin-bottom: 10px;
+        margin-top: 40px;
         
     }
 
@@ -524,12 +543,24 @@ margin-bottom: 2rem;
 }
 
 @media (max-width: 365px) {
+
+    .home-content {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+
     .home-img img {
         width: 90vw;
+        margin-bottom: 10rem;
     }
 
     .about-img img {
         width: 90vw;
+    }
+
+    .about-content h2 {
+        margin-left: 2rem;
     }
 
     .footer {
