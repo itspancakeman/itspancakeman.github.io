@@ -13,12 +13,20 @@
 }
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
-    --text-color: #fff;
-    --main-color: #0ef;
+    --bg-color: #562349;
+    --second-bg-color: #AD6989;
+    --text-color: #FEE2B3;
+    --main-color: #FFA299;
 
 }
+
+
+/*
+#562349
+#FEE2B3
+#AD6989
+
+*/
 
 html {
     font-size: 62.5%;
@@ -285,15 +293,43 @@ margin-bottom: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    max-height: 400px;
 }
 
 .portfolio-box img {
     width: 100%;
+    height: 100%;
     transition: .5s ease;
 }
 
-#pic2 {
-    height: 21vw;
+#coconut {
+    width: 100%;
+    height: 100%;
+}
+
+#duck {
+    width: 100%;
+    height: 100%;
+}
+
+#potatoes {
+    width: 100%;
+    height: 100%;
+}
+
+#plants {
+    width: 100%;
+    height: 100%;
+}
+
+#craft {
+    width: 100%;
+    height: 100%;
+}
+
+#tiny-cat2 {
+    width: 100%;
+    height: 100%;
 }
 
 .portfolio-box img:hover {
@@ -315,6 +351,7 @@ margin-bottom: 2rem;
     padding: 0 4rem;
     transform: translate(100%);
     transition: .5s ease;
+    color: pink;
 }
 
 .portfolio-box:hover .portfolio-layer {
@@ -367,8 +404,7 @@ margin-bottom: 2rem;
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--second-bg-color);
+    color: white;
     border-radius: .8rem;
     margin: .7rem 0;
 
